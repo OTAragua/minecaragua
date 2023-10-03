@@ -703,7 +703,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(242,86,72,0.5)',
+                fillColor: 'rgba(252,235,2,0.5)',
                 interactive: true,
             }
         }
@@ -1062,7 +1062,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(213,210,55,0.5)',
+                fillColor: 'rgba(58,241,73,0.5)',
                 interactive: true,
             }
         }
@@ -1319,6 +1319,9 @@
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>FOTO LINK</strong><br />' + (feature.properties['FOTO LINK'] !== null ? autolinker.link(feature.properties['FOTO LINK'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['IMAGE'] !== null ? autolinker.link(feature.properties['IMAGE'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
